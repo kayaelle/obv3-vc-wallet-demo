@@ -16,7 +16,7 @@ Why use this fork of the wallet for this demo? This fork contains some code chan
 
 <em>**iOS simulator** note: To load the simulator app, follow the instructions in the readme of the wallet. Before running "npm run ios", ensure that Xcode is running first.</em>
 
-index.html displays the badge at localhost:5000. It looks like it's from Badgr because I re-used quite abit of their badge award page src (I work at Badgr). The share dialog provides a deep_link to the Learner Wallet. To use, open localhost:5000 in the simulator's Safari and click on the link. You should get a message asking if you'd like to open the Learner Wallet.
+index.html displays the badge at localhost:5000. It looks like it's from Badgr because I re-used quite a bit of their badge award page src. The share dialog provides a deep_link to the Learner Wallet. To use, open localhost:5000 in the simulator's Safari and click on the link. You should get a message asking if you'd like to open the Learner Wallet.
 
 index.js is where the badge is issued. To run, navigate to /app and run "node index.js". Comments in the code explain how it works in more detail.
 
