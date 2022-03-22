@@ -30,7 +30,7 @@ This [Credential Request Flow document](https://github.com/digitalcredentials/do
 [Download Demo Video](https://github.com/kayaelle/obv3-vc-wallet-demo/blob/master/Demo-VC-Open-Badge-to-DCC-Learner-Wallet.mp4)
 
 
- #Notes
+ # Notes
 
 * This demo isn't using an Open Badge context yet but that is coming soon. In the short-term, Open Badge properties are linked to directly in the context of the example badge data.
 
