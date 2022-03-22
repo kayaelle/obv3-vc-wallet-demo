@@ -25,6 +25,10 @@ This demo uses a mock Oauth2/OpenId service provided by MockLab (https://www.moc
 
 This [Credential Request Flow document](https://github.com/digitalcredentials/docs/blob/main/request/credential_request.md) explains the flow from the recipient's perspective.
 
+#### Demo Video:
+
+[Demo video](https://github.com/kayaelle/obv3-vc-wallet-demo/blob/master/Demo-VC-Open-Badge-to-DCC-Learner-Wallet.mp4)
+
 
  #Notes
 
