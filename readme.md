@@ -27,7 +27,7 @@ This [Credential Request Flow document](https://github.com/digitalcredentials/do
 
 #### Demo Video:
 
-[Demo video](https://github.com/kayaelle/obv3-vc-wallet-demo/blob/master/Demo-VC-Open-Badge-to-DCC-Learner-Wallet.mp4)
+[Download Demo Video](https://github.com/kayaelle/obv3-vc-wallet-demo/blob/master/Demo-VC-Open-Badge-to-DCC-Learner-Wallet.mp4)
 
 
  #Notes
