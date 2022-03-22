@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1",
+    "https://w3id.org/dcc/v1",
+     {
+      "Criteria": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#Criteria",
+      "IdentityObject": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#IdentityObject",
+      "criteria": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#Criteria#criteria",
+      "hashed": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#IdentityObject#hashed",
+      "identity": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#IdentityObject#identity",
+      "narrative": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#narrative",
+      "recipient": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#IdentityObject#recipient",
+      "salt": "https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html#IdentityObject#salt"
+      }
+  ],
+  "type": [
+      "VerifiableCredential",
+      "Assertion"
+  ],
+  "issuer": {
+    "id": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+    "name": "Demo VC Badge Issuer",
+    "url": "http://localhost:5000"
+  },
+  "issuanceDate": "2022-02-16T08:00:00Z",
+  "credentialSubject": {
+    "id": "",
+    "recipient": {
+      "type": "email",
+      "hashed": false,
+      "identity": "learner@demo.com"
+    },
+    "hasCredential": {
+      "name": "Demo VC Open Badge 3.0",
+      "description": "Description of Open Badges 3.0 as Verifiable Credentials and the DCC Learner Wallet",
+      "image": "http://localhost:5000/badge-image.png",
+      "criteria": {
+        "narrative": "Description of the the flow from a badging platform to the wallet"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1",
+    "https://w3id.org/security/suites/x25519-2020/v1"
+  ],
+  "id": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+  "verificationMethod": [
+    {
+      "id": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+      "publicKeyMultibase": "z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo"
+    }
+  ],
+  "authentication": [
+    "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo"
+  ],
+  "assertionMethod": [
+    "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo"
+  ],
+  "capabilityDelegation": [
+    "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo"
+  ],
+  "capabilityInvocation": [
+    "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo"
+  ],
+  "keyAgreement": [
+    {
+      "id": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo#z6LStqd8e3ceffLr9VcspvH3QakcERAgbk361iUsyBaNNZr5",
+      "type": "X25519KeyAgreementKey2020",
+      "controller": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+      "publicKeyMultibase": "z6LStqd8e3ceffLr9VcspvH3QakcERAgbk361iUsyBaNNZr5"
+    }
+  ]
+}

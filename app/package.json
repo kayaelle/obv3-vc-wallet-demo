@@ -1,0 +1,31 @@
+{
+  "name": "obv3-eduwallet-demo",
+  "version": "1.0.0",
+  "description": "Simple example of flow from an Open Badges platform to the DCC EduWallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kerri Lemoie",
+  "license": "ISC",
+  "dependencies": {
+    "@digitalcredentials/dcc-context": "^1.0.0",
+    "@digitalcredentials/did-io": "^1.0.2",
+    "@digitalcredentials/did-method-key": "^2.0.3",
+    "@digitalcredentials/ed25519-signature-2020": "^3.0.2",
+    "@digitalcredentials/ed25519-verification-key-2020": "^3.2.2",
+    "@digitalcredentials/vc": "^1.1.2",
+    "@digitalcredentials/x25519-key-agreement-key-2020": "^2.0.2",
+    "body-parser": "^1.19.2",
+    "credentials-context": "^2.0.0",
+    "did-context": "^3.1.1",
+    "ed25519-signature-2020-context": "^1.1.0",
+    "express": "^4.17.3",
+    "jsonld-document-loader": "^1.2.0",
+    "moment": "^2.29.1",
+    "x25519-key-agreement-2020-context": "^1.0.0"
+  },
+  "devDependencies": {
+    "oauth2-mock-server": "^4.3.0"
+  }
+}
