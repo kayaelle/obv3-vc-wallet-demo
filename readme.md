@@ -39,4 +39,4 @@ This [Credential Request Flow document](https://github.com/digitalcredentials/do
 
 * Wallet may not accept svg and svg is a valid badge image format.
 
-* Wallet displays person's name but Open Badges doesn't do that. Should be discussed at Open Badges. Open Badges has three protential recipient values: email, telephone, and url. These values can be hashed. 
+* Wallet displays person's name but Open Badges doesn't do that. Should be discussed at Open Badges. Open Badges has three potential recipient values: email, telephone, and url. These values can be hashed. 
