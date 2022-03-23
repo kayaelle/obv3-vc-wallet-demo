@@ -11,6 +11,7 @@ This working demo assumes that the Open Badge issuing service is an openid provi
 * Xcode
 * iOS Simulator (The demo should run on the android simulator too but hasn't been tested yet)
 * [This fork of the DCC Wallet](https://github.com/kayaelle/learner-credential-wallet)
+* Notice npm modules listed in package.json several of which handle the verification and signing of VCs
 
 Why use this fork of the wallet for this demo? This fork contains some code changes that will display a credential like an Open Badge. The DCC wallet will do this soon. Also, this fork has the demo app registered with a DID:key for the Issuer and the url localhost:5000 so that it knows who this issuer is. 
 
@@ -18,7 +19,7 @@ Why use this fork of the wallet for this demo? This fork contains some code chan
 
 index.html displays the badge at localhost:5000. It looks like it's from Badgr because I re-used quite a bit of their badge award page src. The share dialog provides a deep_link to the Learner Wallet. To use, open localhost:5000 in the simulator's Safari and click on the link. You should get a message asking if you'd like to open the Learner Wallet.
 
-index.js is where the badge is issued. To run, navigate to /app and run "node index.js". Comments in the code explain how it works in more detail.
+To get started, run `npm install` in the project folder. index.js is where the badge is issued. To run this and the index.html (localhost:5000), navigate to /app and run `node index.js`. Comments in the index.js explain how it works in more detail.
 
 This demo uses a mock Oauth2/OpenId service provided by MockLab (https://www.mocklab.io/docs/oauth2-mock/) to mock an issuer platform oauth process and does not assess the bearer token posted after authentication to map the DID to the learner email address. This should be done by issuers and could be added to this demo later. One way to do this is to use mock-oauth2-server (https://github.com/navikt/mock-oauth2-server) instead which appears to provide a way to do this.  
 
