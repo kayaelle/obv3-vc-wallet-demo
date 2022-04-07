@@ -35,7 +35,7 @@ This [Credential Request Flow document](https://github.com/digitalcredentials/do
 
 * This demo isn't using an Open Badge context yet but that is coming soon. In the short-term, Open Badge properties are linked to directly in the context of the example badge data.
 
-* Submitted issue for vc wrapped in a vc not working properly. See issue: https://github.com/digitalcredentials/learner-credential-wallet/issues/162
+* Submitted issue for vc wrapped in a vp not working properly. See issue: https://github.com/digitalcredentials/learner-credential-wallet/issues/162 (Update: issue has been resolved and this will be updated here soon)
 
 * Wallet may not accept svg and svg is a valid badge image format.
 
