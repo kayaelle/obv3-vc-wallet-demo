@@ -10,7 +10,7 @@ This working demo assumes that the Open Badge issuing service is an openid provi
 * Tested using Node v16.0.0
 * Xcode
 * iOS Simulator (The demo should run on the android simulator too but hasn't been tested yet)
-* [This fork of the DCC Wallet](https://github.com/kayaelle/learner-credential-wallet)
+* [This fork of the DCC Wallet  badgr-demo branch](https://github.com/kayaelle/learner-credential-wallet/tree/badgr-demo)
 * Notice npm modules listed in package.json several of which handle the verification and signing of VCs
 
 Why use this fork of the wallet for this demo? This fork contains some code changes that will display a credential like an Open Badge. The DCC wallet will do this soon. Also, this fork has the demo app registered with a DID:key for the Issuer and the url localhost:5000 so that it knows who this issuer is. 
