@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+      body {
+        padding-top: 5rem;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>Demo Open Badge 3.0</h1>
+        <ol>
+
+          <p>
+            <iPurpose of demo is to experience issuing. Use QR code to get them to the web page where they can claim a badge. Aspirational: Have them enter their name (use this in the title as in "Kerri's Real Demo Badge" -- add this to description too). Can click on submit to create a claim link -- click here to claim your badge. Save this to a csv file with an id, send id with dcc link, when issuing, retrieve from csv file. https://www.npmjs.com/package/node-csv-query
+          </p>
+
+          <p>But first, just provide a page with a link</p>
+
+            <li>Download & install the Learner Credential Wallet -- add link</li>
+            <li>From wallet, click "add credential"</li>
+            <li>Scan QR code</li>
+            <li>Wallet will show a demo log in screen. This mocks how you may authenticate with an issuer from the wallet - click log in to continue.</li>
+            <li>Once the issuer confirms yor log in, the wallet sends it the decentralized idenitifier that was created when you installed the wallet.</li>
+            <li>The issuer creates and digitally signs the badge and sends it back to the wallet.</li>
+            <li>From the wallet you can review and accept the badge.</li>
+          </ol>
+
+
+  
+            <a href="dccrequest://request?issuer=sjcc&auth_type=bearer&vc_request_url=https://demo-vc-issue.tunnelto.dev/issue&challenge=620d17d4a15f446f35b92e48">Add to wallet 2</a>
+
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

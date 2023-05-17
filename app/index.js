@@ -1,7 +1,7 @@
 const express = require('express'); //Import the express dependency
 const bodyParser = require('body-parser');
 const app = express();              //Instantiate an express app, the main work horse of this server
-const port = 5000;                  //Save the port number where your server will be listening
+const port = 3000;                  //Save the port number where your server will be listening
 const http = require("http");
 const fs = require('fs');
 const path = require('path');
@@ -17,15 +17,22 @@ app.use(express.static('public'));
 
 app.use(bodyParser.json());
 
-// Demo Badge Assertion Page
-app.get('/', (req, res) => {  
+// Demo Landing Page
+app.get('/index', (req, res) => {  
     res.sendFile('index.html', {root: __dirname}); 
+});
+
+// OBv3 Demo Issuer
+app.get('/basic-obv3', (req, res) => {  
+    res.sendFile('basic-obv3.html', {root: __dirname}); 
 });
 
 // Response to wallet with demo badge
 app.post('/issue', function (req, res) {
 
   // example.wallet.vp-request.txt is an example of what the wallet returns to the badge issuer after the oauth is successful
+
+console.log("monkey");
 
   let presentation = req.body;
 
@@ -43,17 +50,30 @@ app.post('/issue', function (req, res) {
 
   //Verifies VP that the wallet sends that contains the lerner DID:key and is signed by the private key associated with that DID.
 
+  console.log("presentation"+presentation);
+
+  console.log("challenge"+challenge);
+
+  console.log("suite"+suite);
+
+  console.log("documentLoader"+JSON.stringify(documentLoader));
+
   let verify = await vc.verify({presentation, challenge, suite, documentLoader});
+
+  console.log("verify"+JSON.stringify(verify));
+
 
   // If the VC passes verification, load the badge data and assign the learner's DID:key to the credential.subject.id 
 
     if (verify.presentationResult.verified === true) {
-      //badge data loaded from /./public/badge-dcc-combo-assertion-example.json
+      //badge data loaded from /./public/demo-obv3.json
 
-      let badgeData = await fs.readFileSync(path.resolve(__dirname+'/public/', 'badge-dcc-combo-assertion-example.json'));
+      console.log("HEY");
+
+      let badgeData = await fs.readFileSync(path.resolve(__dirname+'/public/', 'demo-obv3.json'));
       let credential = JSON.parse(badgeData);
 
-      //console.log("Badge "+JSON.stringify(credential), null, 2);
+      console.log("Badge "+JSON.stringify(credential), null, 2);
       credential.credentialSubject.id = holder;
 
       // Retreive keypair and sign VC using Ed25519Signature2020

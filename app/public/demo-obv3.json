@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.1.json"
+  ],
+  "type": [
+      "VerifiableCredential",
+      "OpenBadgeCredential"
+  ],
+  "id": "urn:uuid:13b50312-7e0c-4139-ac1f-e25935ab6c68",
+  "name": "Demo Badge",
+  "issuer": {
+    "id": "did:key:z6MkwDsrhd2TWx1vExAh3CLwAdBuUtvTQQNXGH2Q1VkrjrDo",
+    "name": "Demo Issuer",
+    "url": "https://demo-vc-issue.tunnelto.dev/basic-obv3",
+    "image": {
+      "id": "https://demo-vc-issue.tunnelto.dev/demo-badge.png",
+      "type": "Image"
+    }
+  },
+  "issuanceDate": "2023-05-17T08:00:00Z",
+  "credentialSubject": {
+    "id": "",
+    "type": "AchievementSubject",
+    "achievement": {
+      "id": "https://demo-vc-issue.tunnelto.dev/basic-obv3",
+      "type": "Badge",
+      "name": "Demo Badge",
+      "description": "The holder of this badge experienced obtaining a badge in a digital wallet",
+      "image": {
+        "id": "https://demo-vc-issue.tunnelto.dev/demo-badge.png",
+        "type": "Image"
+      },
+      "criteria": {
+        "narrative": "Demonstration of issuing a verifiable LER to a digial wallet"
+      }
+    }
+  }
+}
+
+
+
